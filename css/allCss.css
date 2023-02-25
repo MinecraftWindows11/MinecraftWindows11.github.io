@@ -1,0 +1,15 @@
+body {
+  margin:0px
+}
+
+#header {
+    text-align: center;
+    font-weight: bold;
+}
+
+#subheader {
+    text-align: center;
+    font-size: 250%;
+}
+
+//就先写这么多吧，管他呢
