@@ -1,5 +1,8 @@
 body {
-  margin:0px
+  margin:0px;
+  background-image: radial-gradient(closest-side, rgb(232, 49, 13), rgba(235, 105, 78, 0));
+  background-size: 130vw 130vh;
+  background-position: -80vw -80vh;
 }
 
 #header {
