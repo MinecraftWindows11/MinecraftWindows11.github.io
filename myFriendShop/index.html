@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+  <title>主页 - 朋友的小店</title>
+  <style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #1b1c21;
+			color: #ffffff;
+			font-family: Arial, sans-serif;
+		}
+
+		/* 顶部导航栏 */
+		.topnav {
+			background-color: #101216;
+			overflow: hidden;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		/* 导航栏链接样式 */
+		.topnav a {
+			color: #ffffff;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 20px;
+			font-weight: bold;
+			display: inline-block;
+			margin-right: 10px;
+			border-radius: 5px;
+			transition: all 0.3s ease;
+		}
+
+		/* 鼠标悬停效果 */
+		.topnav a:hover {
+			background-color: #3d3d3d;
+			box-shadow: 0px 0px 5px #ffffff;
+			color: #ffffff;
+		}
+
+		/* 侧边栏 */
+		.sidenav {
+			height: 100%;
+			width: 250px;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: -250px;
+			background-color: #101216;
+			overflow-x: hidden;
+			padding-top: 20px;
+			transition: all 0.3s ease;
+		}
+
+		/* 打开侧边栏的按钮 */
+		.openbtn {
+			font-size: 20px;
+			cursor: pointer;
+			background-color: #101216;
+			color: #ffffff;
+			padding: 10px 15px;
+			border: none;
+			border-radius: 5px 0px 0px 5px;
+			margin-right: 10px;
+			transition: all 0.3s ease;
+		}
+		
+		/* 点击打开按钮后的样式 */
+		.openbtn:hover {
+			background-color: #3d3d3d;
+			box-shadow: 0px 0px 5px #ffffff;
+			color: #ffffff;
+		}
+		
+		/* 关闭侧边栏的按钮 */
+		.closebtn {
+			font-size: 20px;
+			cursor: pointer;
+			background-color: #101216;
+			color: #ffffff;
+			padding: 10px 15px;
+			border: none;
+			border-radius: 0px 5px 5px 0px;
+			margin-right: 10px;
+			transition: all 0.3s ease;
+		}
+
+		/* 鼠标悬停效果 */
+		.closebtn:hover {
+			background-color: #3d3d3d;
+			box-shadow: 0px 0px 5px #ffffff;
+			color: #ffffff;
+		}
+
+		/* 关闭侧边栏按钮所在的容器 */
+		.closebtn-container {
+			text-align: right;
+			margin-bottom: 20px;
+		}
+
+		/* 侧边栏链接样式 */
+		.sidenav a {
+			padding: 10px 8px 10px 32px;
+			text-decoration: none;
+			font-size: 20px;
+			color: #ffffff;
+			display: block;
+			transition: all 0.3s ease;
+		}
+
+		/* 鼠标悬停效果 */
+		.sidenav a:hover {
+			background-color: #3d3d3d;
+			box-shadow: 0px 0px 5px #ffffff;
+			color: #ffffff;
+			padding-left: 48px;
+		}
+
+		/* 当前页面的链接 */
+		.active {
+			background-color: #3d3d3d;
+			box-shadow: 0px 0px 5px #ffffff;
+			color: #ffffff;
+			padding-left: 48px;
+		}
+	</style>
+</head>
+<body>
+<body>
+	<!-- 顶部导航栏 -->
+	<div class="topnav">
+		<a href="#" class="active">Index</a>
+		<a href="#">Test1</a>
+		<a href="#">Test2</a>
+		<a href="#">Test3</a>
+		<a href="#">Test4</a>
+		<button class="openbtn" onclick="openNav()">☰</button>
+	</div>
+
+	<!-- 侧边栏 -->
+	<div class="sidenav" id="mySidenav">
+		<div class="closebtn-container">
+			<button class="closebtn" onclick="closeNav()">×</button>
+		</div>
+		<a href="#" class="active">Index</a>
+		<a href="#">Test1</a>
+		<a href="#">Test2</a>
+		<a href="#">Test3</a>
+		<a href="#">Test4</a>
+	</div>
+
+	<!-- 打开侧边栏的 JavaScript 代码 -->
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.left = "0";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.left = "-250px";
+		}
+	</script>
+</body>
