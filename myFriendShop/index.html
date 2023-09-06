@@ -124,6 +124,33 @@
 			color: #ffffff;
 			padding-left: 48px;
 		}
+	  /* 浮动卡片容器 */
+		.card-container {
+			width: 100%;
+			overflow: hidden;
+		}
+
+		/* 左侧浮动卡片 */
+		.left-card {
+			width: 45%;
+			margin: 10px;
+			padding: 20px;
+			background-color: #f1f1f1;
+			border-radius: 5px;
+			box-sizing: border-box;
+			float: left;
+		}
+
+		/* 右侧浮动卡片 */
+		.right-card {
+			width: 45%;
+			margin: 10px;
+			padding: 20px;
+			background-color: #f1f1f1;
+			border-radius: 5px;
+			box-sizing: border-box;
+			float: right;
+		}
 	</style>
 </head>
 <body>
@@ -149,6 +176,21 @@
 		<a href="#">Test3</a>
 		<a href="#">Test4</a>
 	</div>
+
+	<div class="card-container">
+		<!-- 左侧浮动卡片 -->
+		<div class="left-card">
+			<h2>左侧卡片</h2>
+			<p>这是左侧浮动卡片的内容。</p>
+		</div>
+
+		<!-- 右侧浮动卡片 -->
+		<div class="right-card">
+			<h2>右侧卡片</h2>
+			<p>这是右侧浮动卡片的内容。</p>
+		</div>
+	</div>
+
 
 	<!-- 打开侧边栏的 JavaScript 代码 -->
 	<script>
