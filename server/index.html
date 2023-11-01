@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--我草泥马你在干什么他妈的没有后端玩尼玛渗透！-->
+<meta charset="utf-8">
+<head>
+    <!--我草泥马还看尼玛是怎么了还在看你没事吧吃不吃溜溜梅-->
+    <style>
+        #sidebar {
+            background-color: #f1f1f1;
+            width: 200px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+        
+        #content {
+            margin-left: 200px;
+            padding: 20px;
+        }
+        
+        /* 顶栏样式 */
+        .topbar {
+            background-color: #333;
+            height: 50px;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        /* 折叠按钮样式 */
+        .toggle-button {
+            cursor: pointer;
+            padding: 5px;
+        }
+        
+        /* 默认情况下隐藏的侧栏 */
+        @media (max-width: 768px) {
+            #sidebar {
+                display: none;
+            }
+            
+            #content {
+                margin-left: 0;
+            }
+        }
+    </style>
+    <title>TaoHuaYuanServer(不对外公开服务器指南)</title>
+</head>
+<body>
+    <!--看你妈嘞滚出F12，把你的手指从Console上移开，滚！-->
+    <div id="sidebar">
+        <div class="toggle-button" onclick="toggleSidebar()">&#9776;</div>
+        <h3>欢迎游玩本服务器！</h3>
+        <ul>
+            <li>注液</li>
+            <li>游戏玩法</li>
+        </ul>
+    </div>
+    
+    <div id="content">
+        <!-- 顶栏 -->
+        <div class="topbar">
+            <div class="toggle-button" onclick="toggleSidebar()">&#9776;</div>
+            <a href="https://minecraft-windows11.github.io/index.html"><li>回到主页</li></a>
+        </div>
+        
+        <h1>欢迎来到桃花源服务器！</h1>
+        <p>Coming soon......</p>
+    </div>
+    
+    <!-- JavaScript代码 -->
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            sidebar.style.display = sidebar.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
