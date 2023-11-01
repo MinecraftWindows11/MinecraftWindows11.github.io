@@ -1,82 +1,47 @@
 <!DOCTYPE html>
-<!--我草泥马你在干什么他妈的没有后端玩尼玛渗透！-->
-<meta charset="utf-8">
+<html lang="en">
 <head>
-    <!--我草泥马还看尼玛是怎么了还在看你没事吧吃不吃溜溜梅-->
-    <style>
-        #sidebar {
-            background-color: #f1f1f1;
-            width: 200px;
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            left: 0;
-            overflow-x: hidden;
-            padding-top: 20px;
-        }
-        
-        #content {
-            margin-left: 200px;
-            padding: 20px;
-        }
-        
-        /* 顶栏样式 */
-        .topbar {
-            background-color: #333;
-            height: 50px;
-            color: #fff;
-            padding: 10px;
-            display: flex;
-            align-items: center;
-        }
-        
-        /* 折叠按钮样式 */
-        .toggle-button {
-            cursor: pointer;
-            padding: 5px;
-        }
-        
-        /* 默认情况下隐藏的侧栏 */
-        @media (max-width: 768px) {
-            #sidebar {
-                display: none;
-            }
-            
-            #content {
-                margin-left: 0;
-            }
-        }
-    </style>
-    <title>TaoHuaYuanServer(不对外公开服务器指南)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <title>主页，欢迎！</title>
 </head>
 <body>
-    <!--看你妈嘞滚出F12，把你的手指从Console上移开，滚！-->
-    <div id="sidebar">
-        <div class="toggle-button" onclick="toggleSidebar()">&#9776;</div>
-        <h3>欢迎游玩本服务器！</h3>
-        <ul>
-            <li>注液</li>
-            <li>游戏玩法</li>
-        </ul>
-    </div>
-    
-    <div id="content">
-        <!-- 顶栏 -->
-        <div class="topbar">
-            <div class="toggle-button" onclick="toggleSidebar()">&#9776;</div>
-            <a href="https://minecraft-windows11.github.io/index.html"><li>回到主页</li></a>
+    <!-- 顶栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">桃花源服务器帮助</a>
         </div>
-        
-        <h1>欢迎来到桃花源服务器！</h1>
-        <p>Coming soon......</p>
+    </nav>
+    
+    <!-- 侧栏 -->
+    <div class="offcanvas offcanvas-start bg-light" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebarLabel">服务器帮助</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-unstyled ps-0">
+                <li class="mb-1"><a href="#">图书馆主页</a></li>
+                <li class="mb-1"><a href="#">服务器指南主页</a></li>
+                <li class="mb-1"><a href="#">服务器玩法</a></li>
+                <li class="mb-1"><a href="#">联系我们</a></li>
+            </ul>
+        </div>
     </div>
     
-    <!-- JavaScript代码 -->
-    <script>
-        function toggleSidebar() {
-            var sidebar = document.getElementById("sidebar");
-            sidebar.style.display = sidebar.style.display === "none" ? "block" : "none";
-        }
-    </script>
+    <!-- 内容区域 -->
+    <div class="container mt-3">
+        <!-- 页面内容 -->
+        <h1>欢迎来到我的Minecraft服务器！</h1>
+        <p>这是一个示例帮助页面，您可以在此添加您的具体内容。</p>
+    </div>
+    
+    <!-- 引入Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
