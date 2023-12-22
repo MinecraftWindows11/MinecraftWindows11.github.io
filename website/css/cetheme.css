@@ -61,7 +61,7 @@
     --link-color: var(--medium-accent);
     --visited-link-color: var(--medium-accent);
     --hover-link-color: var(--medium-accent);
-    --newpage-color: var(--medium-accent);
+    --newpage-color: #52B3FD;
 
     --gradient-header: repeating-linear-gradient(
       -30deg,
